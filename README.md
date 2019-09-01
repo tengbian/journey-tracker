@@ -1,7 +1,7 @@
 # Journey Tracker
 
 ## This Mobile Application is used to track journey routes
-### Demo for the App is in demo.pdf
+	- Demo for the App is in demo.pdf
 
 - Backend (ExpressJS/NodeJS/MongoDB)
 	- Created a server with Express to communicate with the MongoDB database

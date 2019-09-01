@@ -1,6 +1,6 @@
 # Journey Tracker
 
-This Application is used to track journey routes.
+## This Application is used to track journey routes.
 
 
 - Backend (ExpressJS/NodeJS/MongoDB)
@@ -14,3 +14,4 @@ This Application is used to track journey routes.
 		- current track list screen
 		- a new track screen
 		- account screen for user information management and logout
+

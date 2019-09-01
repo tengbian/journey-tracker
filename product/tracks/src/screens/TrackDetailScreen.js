@@ -4,6 +4,10 @@ import { Context as TrackContext } from "../context/TrackContext";
 import MapView, { Polyline } from "react-native-maps";
 
 const TrackDetailScreen = ({ navigation }) => {
+  navigationOptions = {
+    title: "New Track"
+  };
+
   const { state } = useContext(TrackContext);
   const _id = navigation.getParam("_id");
   const track = state.find(t => t._id === _id);
@@ -26,10 +30,6 @@ const TrackDetailScreen = ({ navigation }) => {
     </View>
   );
 };
-
-// TrackDetailScreen.navigationOptions = {
-//   title: "New Track"
-// };
 
 const styles = StyleSheet.create({
   map: {

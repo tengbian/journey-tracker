@@ -1,6 +1,6 @@
 # Journey Tracker
 
-## This Application is used to track journey routes.
+## This Application is used to track journey routes
 
 
 - Backend (ExpressJS/NodeJS/MongoDB)

@@ -14,4 +14,8 @@
 		- current track list screen
 		- a new track screen
 		- account screen for user information management and logout
+	- Added track detail screen that will show recorded journey routes
+	- Integarted the map in new track screen. When recording, a polyline would be drawed in the map
+	- Added the map to track detail screen
+
 

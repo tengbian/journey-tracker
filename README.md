@@ -20,9 +20,9 @@
 
 - Test & Deployment
 	- Tested in ios12 in ios simulator and in iphone 7, procedure for simulator:
-		- run backend tracker server in track-server folder: ~~~ npm run dev ~~~
-		- run ngrok by ~~~ ngrok http 3000 ~~~ and use the given domain name in ~~~ track.js ~~~
-		- run ~~~ expo start ~~~ in ~~~ /tracks ~~~ 
+		- run backend tracker server in track-server folder: ``` npm run dev ```
+		- run ngrok by ``` ngrok http 3000 ``` and use the given domain name in ``` track.js ```
+		- run ``` expo start ``` in ``` /tracks ``` 
 	- Waiting for deployment
 
 

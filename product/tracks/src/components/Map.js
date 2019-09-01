@@ -3,7 +3,7 @@ import { Text, StyleSheet, ActivityIndicator } from "react-native";
 import MapView, { Polyline, Circle } from "react-native-maps";
 import { Context as LocationContext } from "../context/LocationContext";
 
-const Map = () => {
+const Map = ({ mapHeader }) => {
   const {
     state: { currentLocation, locations }
   } = useContext(LocationContext);
@@ -18,7 +18,7 @@ const Map = () => {
 
   return (
     <MapView
-      style={styles.map}
+      style={mapHeader || styles.map}
       initialRegion={{
         ...currentLocation.coords,
         latitudeDelta: 0.01,

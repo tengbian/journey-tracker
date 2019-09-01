@@ -29,6 +29,15 @@ trackListFlow.navigationOptions = {
   tabBarIcon: <FontAwesome name="th-list"></FontAwesome>
 };
 
+const accountFlow = createStackNavigator({
+  Account: AccountScreen
+});
+
+accountFlow.navigationOptions = {
+  title: "Account",
+  tabBarIcon: <FontAwesome name="gear" size={20}></FontAwesome>
+};
+
 const switchNavigator = createSwitchNavigator({
   ResolveAuth: ResolveAuthScreen,
   loginFlow: createStackNavigator({
@@ -38,7 +47,8 @@ const switchNavigator = createSwitchNavigator({
   mainFlow: createBottomTabNavigator({
     trackListFlow,
     TrackCreate: TrackCreateScreen,
-    Account: AccountScreen
+    // Account: AccountScreen
+    accountFlow
   })
 });
 

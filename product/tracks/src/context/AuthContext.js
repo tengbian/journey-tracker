@@ -36,8 +36,6 @@ const clearErrorMessage = dispatch => () => {
 const signup = dispatch => async ({ email, password }) => {
   try {
     const response = await trackerApi.post("/signup", { email, password });
-    console.log("1234567");
-    console.log(response);
     await AsyncStorage.setItem("token", response.data.token);
     dispatch({ type: "signin", payload: response.data.token });
     navigate("TrackList");

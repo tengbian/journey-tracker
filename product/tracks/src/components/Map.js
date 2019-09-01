@@ -4,10 +4,9 @@ import MapView, { Polyline, Circle } from "react-native-maps";
 import { Context as LocationContext } from "../context/LocationContext";
 
 const Map = () => {
-  const { state } = useContext(LocationContext);
-  console.log(state);
-
-  const { currentLocation } = state;
+  const {
+    state: { currentLocation, location }
+  } = useContext(LocationContext);
 
   if (!currentLocation)
     return (
